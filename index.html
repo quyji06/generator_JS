@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Generator</title>
+</head>
+<body>
+    <div class="container">
+        <aside>
+            <label for="figury">Ile figur?</label>
+            <input type="number" id="figury" value="1" min="1"> <br> 
+            <label for="szerokosc">Jaka szerokość?</label>
+            <input type="number" id="szerokosc" value="100" min="1"> <br> 
+            <label for="wysokosc">Jaka wysokość?</label>
+            <input type="number" id="wysokosc" value="100" min="1"> <br>
+            <label for="kolor">Jaki kolor?</label>
+            <input type="color" id="kolor" value="#0000ff"> <br>
+            <label for="kolka">Czy generować kółka?</label>
+            <input type="checkbox" id="kolka"> <br>
+            <label for="trojkaty">Czy generować trójkąty?</label>
+            <input type="checkbox" id="trojkaty"> <br>
+            
+            <button onclick="ksztalty()">Stwórz</button>
+        </aside>
+        <main id="main">
+            <h1>Generator</h1>
+            <div id="circleContainer" class="shape-container"></div>
+            <div id="rectangleContainer" class="shape-container"></div>
+        </main>
+        <aside>
+        </aside>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
